@@ -128,7 +128,7 @@ class TreeNode extends PureComponent {
           value={value}
           disabled={disabled}
           mode={mode}
-          onCheckboxChange={onCheckboxChange}
+          onCheckboxChange={!disabled ? onCheckboxChange : onNodeToggle}
           showPartiallySelected={showPartiallySelected}
           readOnly={readOnly}
           clientId={clientId}
